@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style type="text/css">
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			margin: 0;
+			background-image: url('we.jpg');
+            background-size: 101px 101px;
+		}
+		button {
+			font-size: 4rem;
+			padding: 2rem 4rem;
+			background-color: green;
+			color: white;
+			border-radius: 500px;
+			border: none;
+			cursor: pointer;
+            font-family: 'Open Sans', sans-serif;
+		}
+		button:focus {
+			outline: none;
+		}
+		img {
+			display: none;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 1;
+		}
+		audio {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	
+<button id="myButton" onclick="myFunction()">DESCARGAR</button>
+
+<img id="myImg" src="spin.gif" alt="GIF" width="1100" height="850">
+
+<audio id="myAudio" src="omg.mp3"></audio>
+
+<script type="text/javascript">
+	var button = document.getElementById("myButton");
+	var x = document.getElementById("myImg");
+	var y = document.getElementById("myAudio");
+	function myFunction() {
+        document.body.style.backgroundImage = "url('https://www.colorhexa.com/fcfcfc.png')";
+	  x.style.display = "block";
+	  y.play();
+	}
+</script>
+
+</body>
+</html>
